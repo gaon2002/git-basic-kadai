@@ -1,0 +1,47 @@
+PS C:\Users\gaon2> cd G:\マイドライブ\侍エンジニアリング\学習用
+PS G:\マイドライブ\侍エンジニアリング\学習用> mkdir git_challenge
+
+
+    ディレクトリ: G:\マイドライブ\侍エンジニアリング\学習用
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/01/27      9:12                git_challenge
+
+
+PS G:\マイドライブ\侍エンジニアリング\学習用> git init git_challenge
+Initialized empty Git repository in G:/マイドライブ/侍エンジニアリング/学習用/git_challenge/.git/
+PS G:\マイドライブ\侍エンジニアリング\学習用> git add .
+fatal: not a git repository (or any of the parent directories): .git
+PS G:\マイドライブ\侍エンジニアリング\学習用> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS G:\マイドライブ\侍エンジニアリング\学習用> cd git_challenge
+PS G:\マイドライブ\侍エンジニアリング\学習用\git_challenge> git add .
+PS G:\マイドライブ\侍エンジニアリング\学習用\git_challenge> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+PS G:\マイドライブ\侍エンジニアリング\学習用\git_challenge> git commit -m"日本語訳を追記"
+[main (root-commit) c9a3739] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS G:\マイドライブ\侍エンジニアリング\学習用\git_challenge> git add .
+PS G:\マイドライブ\侍エンジニアリング\学習用\git_challenge> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+PS G:\マイドライブ\侍エンジニアリング\学習用\git_challenge> git commit -m"こんにちは、世界！追記"
+[main d9e63d1] こんにちは、世界！追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS G:\マイドライブ\侍エンジニアリング\学習用\git_challenge> git log --oneline
+d9e63d1 (HEAD -> main) こんにちは、世界！追記
+c9a3739 日本語訳を追記
+PS G:\マイドライブ\侍エンジニアリング\学習用\git_challenge> 
